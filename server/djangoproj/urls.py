@@ -12,4 +12,5 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', TemplateView.as_view(template_name="About.html")),
+    path('contact/', TemplateView.as_view(template_name="Contact.html")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
